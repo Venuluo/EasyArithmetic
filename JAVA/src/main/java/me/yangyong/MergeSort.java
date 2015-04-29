@@ -3,7 +3,7 @@ package me.yangyong;
 import java.util.Arrays;
 
 /**
- * Merge sort implementation
+ * Merge sort implementation 时间复杂度O(nlgn) 合并排序 归并排序
  * <p>
  * 有很多算法在结构上是递归的：为了解决一个给定的问题，算法要一次或多次地递归调用其自身来解决相关的子问题。<br>
  * 这些算法通常采用分治策略：将原问题划分成n个规模较小而结构与原问题相似的子问题；<br>
