@@ -3,9 +3,11 @@ package me.yangyong;
 import java.util.Arrays;
 
 /**
- * 插入排序 原地排序 只有常数个元素存储在数组织外
+ * Insert sort implementation 原地排序 只有常数个元素存储在数组织外 时间复杂度O(n^2)
  * <p>
  * 和打牌时整理手中牌一个道理，无论什么时候，左手中的牌都是排好序的，而这些牌原先都是桌上那副牌里最顶上的一些牌
+ * <p>
+ * 循环不变性
  * 
  * @author yangyong
  * @since 2015-4-29
@@ -23,11 +25,11 @@ public class InsertSort {
             3
         };
 
-        // 循环数组
+        // 循环数组 从第2个元素开始
         for (int i = 1; i < array.length; i++) {
             int key = array[i];
 
-            // 每个数组元素和之前已经排序好的元素进行比较 插入
+            // 每个数组元素和之前已经排序好的元素进行从尾至首的比较 大则后退原有元素，小则插入
             int k;
             for (k = i - 1; k >= 0 && array[k] > key; k--) {
                 array[k + 1] = array[k];
