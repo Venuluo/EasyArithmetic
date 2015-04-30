@@ -8,7 +8,7 @@ import java.util.List;
  * Cross join implementation
  * 
  * @author yangyong
- * @since 2015-4-30 
+ * @since 2015-4-30
  */
 public class CrossJoin {
 
