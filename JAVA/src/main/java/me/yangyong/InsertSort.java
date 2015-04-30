@@ -3,11 +3,12 @@ package me.yangyong;
 import java.util.Arrays;
 
 /**
- * Insert sort implementation 原地排序 只有常数个元素存储在数组织外 时间复杂度O(n^2)
+ * Insert sort implementation 原地排序 只有常数个元素存储在数组织外 时间复杂度O(n^2) 稳定
  * <p>
  * 和打牌时整理手中牌一个道理，无论什么时候，左手中的牌都是排好序的，而这些牌原先都是桌上那副牌里最顶上的一些牌
  * <p>
- * 循环不变性
+ * 循环不变性<br>
+ * 插入排序 冒泡排序 选择排序 快速排序 堆排序 归并排序 基数排序 希尔排序
  * 
  * @author yangyong
  * @since 2015-4-29

@@ -3,7 +3,8 @@ package me.yangyong;
 import java.util.Arrays;
 
 /**
- * Bubble sort implementation 冒泡排序
+ * Bubble sort implementation 冒泡排序 稳定<br>
+ * O(n^2) 选择排序类似冒泡排序 交换次数少，每次比较用变量记住元素下标，但是选择排序不稳定 时间复杂度 O(n^2)
  * 
  * @author yangyong
  * @since 2015-4-29
