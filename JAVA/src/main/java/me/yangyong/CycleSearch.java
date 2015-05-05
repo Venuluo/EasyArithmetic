@@ -8,8 +8,10 @@ package me.yangyong;
  */
 public class CycleSearch {
 
-    private static int searchVal(int[] arr, int val, int left, int right) {
-        if (left <= right) {
+    private static int searchVal(int[] arr, int val) {
+        int left = 0;
+        int right = arr.length - 1;
+        while (left <= right) {
             int mid = (left + right) / 2;
             if (val == arr[mid])
                 return mid; // found val
@@ -26,7 +28,6 @@ public class CycleSearch {
                     right = mid - 1; // val is in left side
                 }
             }
-            searchVal(arr, val, left, right);
         }
         return -1; // cannot find val
     }
@@ -41,6 +42,6 @@ public class CycleSearch {
             1,
             2
         };
-        System.out.println(searchVal(array, 3, 0, array.length - 1));
+        System.out.println(searchVal(array, 4));
     }
 }
